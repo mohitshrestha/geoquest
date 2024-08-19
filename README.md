@@ -15,7 +15,7 @@ Nominatim), it's perfect for location-based services, address validation, and ro
 
 - [Features](#features)
 - [Installation](#installation)
-- [API Documentation](#apidocumentation)
+- [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -36,7 +36,7 @@ pip install geoquest
 
 ## API Documentation
 
-For a full list of available functions and their usage, please refer to the [API documentation](https://geoquest.github.io/).
+For a full list of available functions and their usage, please refer to the [API documentation](https://mohitshrestha.github.io/geoquest/).
 
 ## Contributing
 
