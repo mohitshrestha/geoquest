@@ -172,3 +172,9 @@ cython_debug/
 
 # Ignore Python Environment folder files 
 /.venv/
+
+# Ignore .env under config folder files 
+/config/.env
+
+# Ignore logs folder files 
+/logs/

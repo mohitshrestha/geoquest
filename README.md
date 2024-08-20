@@ -15,6 +15,7 @@ Nominatim), it's perfect for location-based services, address validation, and ro
 
 - [Features](#features)
 - [Installation](#installation)
+- [Environment Setup](#environment-setup)
 - [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -22,10 +23,11 @@ Nominatim), it's perfect for location-based services, address validation, and ro
 ## Features
 
 * Search for locations by address or other criteria
+
+### Planned enhancements
 * Geocode addresses into latitude/longitude pairs
 * Reverse-geocode coordinates back into human-readable addresses
 * Caching mechanism to improve performance and reduce API requests
-
 
 ## Installation
 
@@ -34,9 +36,46 @@ You can install GeoQuest using pip:
 pip install geoquest
 ```
 
+## Environment Setup
+To get started, please follow these steps:
+
+### Step 1: Create a copy of the configuration template
+
+1. Copy the `.example.env` file from this repository into your project directory.
+2. Rename the copied file to `.env`
+3. Save the renamed file.
+
+### Step 2: Update the configuration values
+
+1. Open the newly created `.env` file in a text editor.
+2. Replace `YOUR_API_KEY_HERE` with your actual API key.
+3. Review and update any other configuration options as needed.
+
+### Step 3: Save and commit the updated file
+
+1. Make sure to save the updated `.env` file.
+2. Commit the changes to a version control system like Git.
+
+### Example
+
+Here's an example of what the updated `.env` file might look like:
+```makefile
+# Environment Variables Configuration
+
+OPEN_CAGE_API_KEY="YOUR_API_KEY_HERE"
+```
+By following these steps, you'll have a properly configured environment for running this project. If you have any issues or questions, feel free to reach out to us!
+
 ## API Documentation
 
 For a full list of available functions and their usage, please refer to the [API documentation](https://mohitshrestha.github.io/geoquest/).
+
+1. Get County Details by manually entering city and state
+2. Get County Details by loading CSV file that contains city and state
+
+### Get County Details by loading CSV file that contains city and state
+
+#### Step 1: Make sure to update the csv file `city_state_input_data.csv` with desired combination of city, state info. The file is inside the folder `data/raw/`.
 
 ## Contributing
 

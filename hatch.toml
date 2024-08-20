@@ -12,15 +12,17 @@ check = "mypy --install-types --non-interactive {args:src/geoquest tests}"
 [envs.default]
 dependencies = [
   "httpx",
+  "asyncio",
   "rich",
   "python-dotenv",
+  "polars",
 ]
 
 [envs.default.scripts]
-run_main = "python ./src/resumebuilder/main.py"
+run_main = "python ./src/geoquest/county_info.py"
 
 [envs.dev]
-template = "deafult"
+template = "default"
 skip-install = false
 dependencies = [
   "ruff",
